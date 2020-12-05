@@ -1,0 +1,40 @@
+/* ---- homepage ---- */
+
+.main__home {
+    margin: 6.75em 2em 2em;
+    background: url(../hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        
+        .container {
+            height: $top-spacing;
+            display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            border-radius: 4px;
+
+            h1 {
+                font-family: $font-title;
+                    font-weight: 700;
+                    font-size: 6em;
+                    text-transform: uppercase;
+                    color: $main-color;
+                    text-shadow: $shadow; 
+            }
+
+            h2 {
+                justify-content: flex-start;
+                font-family: $font-other;
+                    font-weight: 300;
+                    text-transform: lowercase;
+                    font-style: italic;
+                    font-size: 3em;
+                color: $main-color;
+                text-shadow: $shadow;
+            }
+        }
+
+}

@@ -1,0 +1,132 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    margin-top: 6.75em;
+}
+
+/* ---- nav ---- */
+
+nav {
+    position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2; 
+    display:grid;
+        grid-template-columns: minmax(5.5em, 20%) 1fr;
+        grid-template-rows: 5em;
+    font-family: $font-other;
+        font-weight: 400;
+        font-size: 1.3em;
+    background-color: $main-color;
+
+    img{
+        padding: 1.2em;
+        width: 5.5em;    
+    }
+
+    
+    ul {
+    width: 100%;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            display: block;
+                padding: 0.75em 2em 0.75em 2em;
+            transition: all 0.5s;
+            color: $secondary-color;
+            border-radius: 5px;
+            }
+    
+            
+            a:hover {
+                color: $main-color;
+                background-color: $secondary-color;
+            }
+    }
+
+}
+
+/* ---- footer ---- */
+
+footer {
+    font-family: $font-other;
+        font-weight: 400;
+        font-size: 1.2em;    
+    background-color: $secondary-color;
+    color: $main-color;
+}
+
+footer p{
+    padding: .8em 0;
+    text-align: center;
+}
+
+
+/* ----- medias queries ----- */
+
+@media screen and (max-width: 1200px){
+    html{
+        font-size: 10px;
+    }
+    
+
+}
+
+@media screen and (max-width: 768px){
+    html{
+        font-size: 7px;
+    }
+    
+    .home .container {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .bread {
+        flex-flow: row wrap;
+    }
+
+    #menu p {
+        padding-top: 1em;
+        text-align: center;
+    }
+
+    .cakes {
+        flex-direction: row;
+        flex-flow: wrap;
+    }
+
+    .cakes p {
+        padding-top: 1em;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 425px){
+    html{
+        font-size: 6px;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    nav ul li a {
+        display: block;
+            padding: 0.75em 1em;
+    }
+}

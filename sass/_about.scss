@@ -1,0 +1,56 @@
+/*  ---- about ----- */
+
+
+#about {
+
+    .aboutus__section {
+        display: grid;
+            grid-template-columns: repeat(2, 0.5fr);
+            grid-template-rows: 100%;
+    }
+
+    .donnut {
+        margin: 2em;
+        height: calc(100vh - 10.75em);
+        background: url(/about/sharon-mccutcheon-s4RaGIo2eYI-unsplash.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 3em;
+    }
+    
+    .text {
+
+        h2 {
+            margin-top: 3em;
+            text-transform: uppercase;
+            font-family: $font-title;
+                font-weight: 700;
+                font-size: 3em;
+                text-align: center;
+                color: $tertiary-color;
+                text-shadow: $shadow;
+            transition: all 1s;
+        }
+
+        &:hover h2 {
+            margin-top: .6em;
+        }
+
+        p {
+            padding-top: 2em;
+            display: block;
+            font-family: $font-other;
+            font-weight: 400;
+            font-size: 2em;
+            color: $secondary-color; 
+            text-align: center;
+            transition: all 0.8s;
+            opacity: 0;
+        }
+
+        &:hover p {
+            opacity: 1;
+        }
+    }
+}

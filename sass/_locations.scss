@@ -1,0 +1,112 @@
+/*  ----- locations ----- */
+
+#main__locations {
+    margin-top: 6.75em;
+    display: grid;
+        grid-template-columns: repeat(3, 0.3333fr);
+        grid-template-rows: $top-spacing;
+    background-color: $background;
+
+    h2 {
+        text-transform: uppercase;
+        font-family: $font-title;
+            font-weight: 700;
+            font-size: 3em;
+            text-align: center;
+            color: $tertiary-color;
+            text-shadow: $shadow;
+    }
+
+    .palermo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url(../locations/palermo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        transition: all .5s;
+    }
+
+    
+    .recoleta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url(../locations/recoleta.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        transition: all .5s;
+    }
+
+    .belgrano {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url(../locations/belgrano.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        height: 100%;
+        width: 100%;
+        transition: all .5s;
+    }
+
+    &:hover{
+        
+        .palermo{ 
+            transform: scale(.9);
+            z-index: 0;
+        }
+
+        .recoleta{
+            transform: scale(.9);
+            z-index: 0;
+        }
+
+        .belgrano {
+            transform: scale(.9);
+            z-index: 0;
+        }
+
+        .belgrano:hover{
+            transform: scale(1) ;
+            z-index: 1;
+        }
+        
+        .palermo:hover{
+            transform: scale(1) ;
+            z-index: 1;
+        }
+
+        .recoleta:hover{
+            transform: scale(1) ;
+            z-index: 1;
+        }
+
+    }
+
+    .iconify {
+        margin-bottom: 8em;
+        width: 6em;
+        height: 6em;
+        color: #EA4335;
+    }
+
+    .btn{
+        border: 0px;
+    } 
+
+    .modal-body{
+        display:grid;
+            place-content: center;
+    }
+    
+}

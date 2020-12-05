@@ -1,0 +1,102 @@
+/*  ---- menu -----  */
+
+#menu {
+    background-color: $main-color;
+    padding: 1em 5em;
+    font-family: $font-other;
+    font-weight: 600;
+    
+    p {
+        line-height: 2em;
+        font-size: 1.6em;
+        color: #020D13; 
+        white-space: pre-wrap;
+    }
+    
+
+    .section__menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row nowrap;
+        padding-top: 2em;
+
+        span {
+            position: relative;
+            z-index: 0;
+        }
+
+        span:before {
+            position: absolute;
+            height: .3em;
+            width: 80%;
+            bottom: .1em;
+            left: .7em;
+            z-index: -1;
+            background: $tertiary-color;
+            content: "";
+        }
+        
+        &.bread{
+
+            img{
+                padding-right: 2em;
+                width: 20em;
+            }
+
+            p {
+                text-align: right;
+            }
+        }
+
+        &.cakes {
+
+            flex-direction: row-reverse;
+            
+
+            img{
+                height: 25em;
+                padding-left: 2em;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+
+        &.delicatessen {
+
+            img{
+                height: 25em;
+            }
+
+            p {
+                text-align: right;
+            }
+        }
+    }
+
+    .banner {
+        margin-top: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-style: italic;
+        font-weight: normal;
+        transition: all 2s;
+    
+        &:hover{
+            background-color: $tertiary-color;
+            background-size: 50em 10em;
+        }
+    }
+    
+    .iconify {
+        width: 6em;
+        height: 6em; 
+        color: $secondary-color;
+    }
+    
+}
+
