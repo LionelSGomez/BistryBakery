@@ -44,10 +44,10 @@
     <main id="contact">
 
         <section id="section__contact">
-
+            <!-- 
             <form>
                 <fieldset>
-                    <legend>Something to say?</legend>
+                    <h2>Something to say?</h2>
 
                     <div class="form">
                         
@@ -83,7 +83,57 @@
 
                     </div>
                 </fieldset>
+            </form> -->
+
+            <h2>Something to say...?</h2>
+
+            <form id="form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="name" class="form-control" id="name" placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="mail">Email address:</label>
+                    <input type="email" class="form-control" id="mail" placeholder="name@example.com">
+                </div>
+                </div>
+                <div class="form-group">
+                    <label for="store">Select your store:</label>
+                    <select class="form-control" id="store">
+                        <option selected>Choose...</option>
+                        <option>Belgrano</option>
+                        <option>Recoleta</option>
+                        <option>Palermo</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="text-area">Comments, questions, orders:</label>
+                    <textarea class="form-control" id="text-area" rows="3"></textarea>
+                </div>
+                <div class="form-inline">
+
+
+
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <class class="form-check">
+
+                            <input type="checkbox" class="form-check-input" id="check">
+                            <label class="form-check-label" for="check">Suscribe me to the newsletter</label>
+                        </class>
+                    </div>
+                    <div class="col-12 button">
+                        <button type="submit" class="btn btn-primary ">Submit</button>
+                    </div>
+                </div>
             </form>
+
+
         </section>
 
     </main>

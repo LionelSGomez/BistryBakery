@@ -4,100 +4,137 @@
 
     background-color: $main-color;
 
+
     #section__contact {
 
+        display:flex;
+            justify-content: center;
 
-        legend {
-            font-family: $font-title;
-            font-size: 3em;
-            padding: 1em;
-        }
+                h2 {
+                    
+                    display: grid;
+                        place-content: center;
+                    font-family: $font-title;
+                    padding: 2em;
+                    margin: 0 1em;
+                    background-color: $tertiary-color;
+                }
 
-        label {
-            margin: 0;
-        }
+                #form {
+                    margin: 3em;
+                    width: 80%;
+                    font-family: $font-other;
 
-        .form {
-            width: 60em;
-            margin: 1em auto 5em;
-            display: grid;
-                grid-template-columns: 0.2fr 0.3fr 0.2fr 0.3fr;
-                grid-template-rows: repeat(2, 1fr) 1em 10em 2em;
-                grid-template-areas:
-                    "names a lastname b"
-                    "email c store d"
-                    "e e e e"
-                    "f f f f "
-                    "che che che subm";
-                gap: 2em;
-            padding: 2em;
-            border: solid 1px grey;
-            border-radius: 10px ;
-        }
+                    .button {
+                        button {
+                            width: 100%;
+                            color: $secondary-color;
+                            background-color: $tertiary-color;
+                            border: none;
+                            transition: all 0.5s;
 
-        .name {
-            label {
-                grid-area: names;
-            }
+                            &:hover {
+                                color: $main-color;
+                                background-color: $secondary-color;
+                            }
+                        }
 
-            input {
-                grid-area: a;
-            }
-        }
+                        
+                    }
+                }
 
-        .lastname {
-            label {
-                grid-area: lastname;
-            }
 
-            input {
-                grid-area: b;
-            }
-        }
+        // h2 {
+        //     font-family: $font-title;
+        //     font-size: 3em;
+        //     padding: 1em;
+        // }
 
-        .email {
-            label {
-                grid-area: email;
-            }
+        // label {
+        //     margin: 0;
+        // }
 
-            input {
-                grid-area: c;
-            }
-        }
+        // .form {
+        //     width: 60em;
+        //     margin: 1em auto 5em;
+        //     display: grid;
+        //         grid-template-columns: 0.2fr 0.3fr 0.2fr 0.3fr;
+        //         grid-template-rows: repeat(2, 1fr) 1em 10em 2em;
+        //         grid-template-areas:
+        //             "names a lastname b"
+        //             "email c store d"
+        //             "e e e e"
+        //             "f f f f "
+        //             "che che che subm";
+        //         gap: 2em;
+        //     padding: 2em;
+        //     border: solid 1px grey;
+        //     border-radius: 10px ;
+        // }
 
-        .store {
-            label {
-                grid-area: store;
-            }
+        // .name {
+        //     label {
+        //         grid-area: names;
+        //     }
 
-            select {
-                grid-area: d;
-            }
-        }
+        //     input {
+        //         grid-area: a;
+        //     }
+        // }
 
-        .text {
-            grid-area: e;
-        }
+        // .lastname {
+        //     label {
+        //         grid-area: lastname;
+        //     }
 
-        #get_text {
-            grid-area: f;
-            border-radius: 10px ;
+        //     input {
+        //         grid-area: b;
+        //     }
+        // }
+
+        // .email {
+        //     label {
+        //         grid-area: email;
+        //     }
+
+        //     input {
+        //         grid-area: c;
+        //     }
+        // }
+
+        // .store {
+        //     label {
+        //         grid-area: store;
+        //     }
+
+        //     select {
+        //         grid-area: d;
+        //     }
+        // }
+
+        // .text {
+        //     grid-area: e;
+        // }
+
+        // #get_text {
+        //     grid-area: f;
+        //     border-radius: 10px ;
             
-        }
+        // }
 
-        .check {
-            grid-area: che;
-            display: flex;
-                align-items: center ;
+        // .check {
+        //     grid-area: che;
+        //     display: flex;
+        //         align-items: center ;
 
-            label {
-                padding-right: 1em;
-            }
-        }
+        //     label {
+        //         padding-right: 1em;
+        //     }
+        // }
 
-        .submit {
-            grid-area: subm;
-            border-radius: 4px ;
-        }
+        // .submit {
+        //     grid-area: subm;
+        //     border-radius: 4px ;
+        // }
     }
 }
