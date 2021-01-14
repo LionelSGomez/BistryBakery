@@ -1,5 +1,9 @@
 /* ---- homepage ---- */
 
+body {
+    height: 100%;
+}
+
 .main__home {
     margin: 6.75em 2em 2em;
     background: url(../hero.jpg);
@@ -36,5 +40,21 @@
                 text-shadow: $shadow;
             }
         }
+}
 
+#break {
+    width: 100%;
+    height: 5em;
+    background-color: #66C4C4;
+    margin-bottom: 2em;
+    
+    h2 {
+        text-align: center;
+        font-family: $font-other;
+            font-weight: 300;
+            font-style: italic;
+            font-size: 3em;
+        color: $main-color;
+        text-shadow: $shadow;
+    }
 }
